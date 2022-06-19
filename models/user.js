@@ -79,7 +79,7 @@ User.init (
         // dont automatically create createdAt/updatedAt timestamp fields
         timestamps: false,
         // dont pluralize name of database table
-        freezetableName: true,
+        freezeTableName: true,
         // use underscores instead of camel-casing ( comment_text and not commentText)
         underscored: true,
         //make it so our model name stays lowercase in the database
