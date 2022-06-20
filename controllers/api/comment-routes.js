@@ -47,12 +47,12 @@ router.delete('/:id', (req, res) => {
             id: req.params.id
         }
     })
-    .then(dbPOstData => {
+    .then(dbPostData => {
         if(!dbPostData) {
             res.status(404).json({ message: 'No post found with this id'});
             return;
         }
-        res.json(dbPOstData);
+        res.json(dbPostData);
     })
     .catch(err => {
         console.log(err);
